@@ -23,7 +23,9 @@ jobs:
         run: npm install
 
       - name: Run Tests
-        run: npm run test
+          run: |
+            npm run test
+            npx playwright install
 
   deploy:
     name: Wdrożenie na Serwer
